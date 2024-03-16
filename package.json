@@ -1,0 +1,14 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Landing page of udemy-css",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

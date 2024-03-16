@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 調整瀏覽器字體大小為10px */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
