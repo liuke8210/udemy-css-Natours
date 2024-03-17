@@ -32,7 +32,8 @@
     }
 
     &__nav {
-        width: 100%;
+        opacity: 0;
+        width: 0;
         height: 100vh;
         position: fixed;
         top: 0;
