@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .feature-box {
     background-color: rgba($color-white, 0.8);
@@ -8,6 +9,10 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 3rem rgba($color-black, 0.15);
     transition: transform .2s;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
 
     &:hover {
         transform: translateY(-1rem)scale(1.05);
@@ -20,6 +25,10 @@
         background-clip: text;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary);
         color: transparent;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
 
     }
 

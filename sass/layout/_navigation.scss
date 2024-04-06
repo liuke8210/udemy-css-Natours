@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use"../abstracts/mixins" as *;
 
 .navigation {
 
@@ -18,6 +19,16 @@
         z-index: 200;
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -30,6 +41,16 @@
         right: 6.5rem;
         z-index: 100;
         transition: transform .8s cubic-bezier(0.65, 0, 0.35, 1);
+
+        @include respond(tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__nav {
